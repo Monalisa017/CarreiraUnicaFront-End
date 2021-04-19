@@ -1,0 +1,198 @@
+header{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+ul li{
+    padding: 10px;
+    margin: 5px;
+    width: 160px;
+    height: 5%;
+    background-color: violet;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(152, 37, 228);
+    border-style: solid;
+    border-color: rgb(152, 37, 228);
+    border-radius: 100px;
+
+}
+ul li:hover{
+    background-color: #e6e5e5;
+}
+a.link{
+    text-decoration: none;
+    color: rgb(152, 37, 228);
+}
+body{
+    background-image: url("../images/background.jpg");
+    display: grid;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(152, 37, 228);
+}
+#tipo_cadastro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    width: 500px;
+    height: 200px;
+    color: rgb(152, 37, 228);
+    
+}
+#formulario{
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 700px;
+    height: 600px;
+    color: rgb(152, 37, 228);
+    border: groove;
+    border-radius: 180px;
+    border-color: rgb(152, 37, 228);
+    margin-top: 10%;
+    margin-left: 25%;
+}
+#cpf{
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 5%;
+    color: violet;
+    text-align: center;
+    border: solid;
+    border-radius: 100%;    
+}
+#cnpj{
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10%;
+    background-color: #e6e5e5;
+    color: rgb(152, 37, 228);
+    text-align: center;    
+}
+
+#endereco{
+    font-size: 30px;
+    color: rgb(152, 37, 228);
+    border-radius: 120px;
+    border-style: solid;
+    border-color: rgb(152, 37, 228);
+    width: 60%;
+    height: 35px;
+    margin-left: 20%;
+    text-align: center;
+    background-color: violet;
+}
+.campoEndereco{
+    border-color: rgb(152, 37, 228);
+    border-radius: 50px;
+    width: 50%;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+#input_numero{
+    width: 60px;
+    height: 25px;
+}
+#input_estado{
+    width: 60px;
+    height: 25px;
+}
+#text_cadastro{
+    color: rgb(152, 37, 228);
+}
+input.button{
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    margin-top: 10%;
+    background-color: #e6e5e5;
+    color: rgb(152, 37, 228);
+    border: solid;
+    border-radius: 120px;
+    border-color: rgb(152, 37, 228);
+    justify-content: space-around;
+}
+input.button:hover{
+    background-color: violet;
+}
+input{
+    outline: none;
+}
+#btn{
+    display: inline-block;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    margin-top: 10%;
+    background-color: #e6e5e5;
+    color: rgb(152, 37, 228);
+    border: solid;
+    border-radius: 120px;
+    border-color: rgb(152, 37, 228);
+    justify-content: space-around;
+    outline: none;
+}
+#btn:hover{
+    background-color: violet;
+}
+footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1550px;
+    height: 25px;
+    background-color: violet;
+    color: rgb(152, 37, 228);
+    border-radius: 100px;
+    margin-top: 10%;
+
+}
+@media(max-width: 500px){
+header{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+ul li{
+    justify-content: center;
+}
+
+#formulario{
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    align-content: middle;
+    border-style: none;
+}
+#endereco{
+    width: 300px;
+    text-align: center;
+    margin-left: 27%;
+}
+footer{
+    align-items: center;
+    width: 80%;
+    margin-top: 120%;
+    margin-left: 15%;
+    height: 5%;
+}
+}

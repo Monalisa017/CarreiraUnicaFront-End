@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="images/candyIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<header>
+    <nav>
+        <div class="button">
+            <ul>
+                <strong>
+                    <li><a href="#" target="_blank" class="link"> Home</a> </li>
+                    <li><a href="#" target="_blank" class="link"> Login </li>
+                    <li><a href="#" target="_blank" class="link"> Cadastro </li>
+                </strong>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <form method="POST">
+        <div class="formulario">
+        <p><label for="input_email" name="input_email" > <strong>E-mail:</strong></label><br>   
+        <input type="email" name="email" id="campo_email" onblur="validateEmail()" onfocus="msgEmail()"/>
+        <strong><span id="error" > </span></strong>
+        <p><label for="input_password" name="input_password"> <strong>Senha:</strong></label><br>
+        <input type="password" name="senha" id="campo_password" /> <br> </p>
+            <div class="button">
+                <input class="button" type="submit" value="Entrar" onclick="loginCompleted()" >
+                <input class="button" type="reset" value="Limpar">
+            </div>
+        </div>
+    </form>
+</body>
+<script type="text/javascript" src="JavaScript/login.js"></script>
+<footer>
+    <strong>Monalisa Rodrigues da Silva &reg; - 2021 - Todos os direitos reservados</strong> 
+</footer>
+</html>

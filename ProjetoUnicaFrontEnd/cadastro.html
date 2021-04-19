@@ -1,0 +1,73 @@
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="images/candyIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/cadastro.css">
+</head>
+<header>
+    <nav>
+        <div class="button">
+            <ul>
+                <strong>
+                    <li><a href="#" target="_blank" class="link"> Home</a> </li>
+                    <li><a href="#" target="_blank" class="link"> Login </li>
+                    <li><a href="#" target="_blank" class="link"> Cadastro </li>
+                </strong>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <strong>
+        <p id="text_cadastro"> Preencha os campos corretamente para concluir o cadastro.<br> Obrigado por se cadastrar em nosso site.</p>
+        <p>Selecione o tipo de cadastro: </p>
+            <div id="tipo_cadastro">
+                <p>
+                <input id="cpf" type="radio" name="selection" value="CPF" size="50px"> CPF
+                <input id="cnpj" type="radio" name="selection" value="CNPJ"> CNPJ 
+            </p><br>
+                <p><button id="btn" onclick = "selection();" >Selecionar</button></p>
+            </div>    
+    </strong>
+            
+        <form method="POST"  action="." id="formulario">
+            <div id="form_cpf">
+                <p><label for="input_cpf" name="cpf" requerid> <strong>CPF:</strong></label><br>
+                    <input class="campoEndereco" type="text" name="cpf" id="campo_cpf" onblur="validateCPF(this.value);" requerid/> <br></p>
+            </div>
+            <div id="form_cnpj">
+                <p><label for="input_cnpj" name="cnpj" requerid> <strong>CNPJ:</strong></label><br>
+                    <input class="campoEndereco" type="text" name="cnpj" id="campo_cnpj" onblur="validateCNPJ(this.value);"requerid/> <br></p>
+            </div>
+                    <p id="endereco"><strong>Endereço</strong></p>
+
+                <p><label class="campoEndereco" for="input_cep" name="cep" requerid> <strong>CEP</strong></label><br>   
+                <input class="campoEndereco" type="text" name="cep" id="input_cep" value="" onblur="searchCEP(this.value);"requerid/> <br></p>
+                <p><label for="input_logradouro" name="input_logradouro"> <strong>Logradouro</strong></label><br>
+                <input class="campoEndereco" readonly type="text" name="logradouro" id="input_logradouro" requerid/> <br> </p>
+                <p><label for="input_bairro" name="input_bairro"> <strong>Bairro</strong></label><br>
+                <input class="campoEndereco" readonly type="text" name="bairro" id="input_bairro" requerid/> <br> </p>
+                <p><label for="input_cidade" name="input_cidade"> <strong>Cidade</strong></label><br>
+                <input class="campoEndereco" readonly type="text" name="cidade" id="input_cidade" requerid/> <br> </p>
+                <p><label for="input_estado" name="input_estado"> <strong>Estado</strong></label><br>
+                <input class="campoEndereco" readonly type="text" name="estado" id="input_estado" requerid/> <br> </p>
+                <p><label for="input_numero" name="input_numero"> <strong>Nº</strong></label><br>
+                <input class="campoEndereco" type="text" name="numero" id="input_numero" onblur="validateNumber()"requerid/> <br> </p>
+                <div class="button">
+                    <input class="button" type="submit" value="Cadastrar" onclick="registrationCompleted()">
+                    <input class="button" type="reset" value="Limpar" onclick="clearForm()">
+                </div>
+       
+        </div>
+        
+    </form>  
+</body>
+<script type="text/javascript" src="JavaScript/cadastro.js"></script>
+<footer>
+    <strong>Monalisa Rodrigues da Silva &reg; - 2021 - Todos os direitos reservados</strong> 
+</footer>
+</html>
